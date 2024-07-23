@@ -14,7 +14,7 @@ for name in ../*/ ; do
     if [ -d $name ] ; then
         #echo "${name/..\/}:" removes the dots
         #sed 's|/||g' removes the slash
-        if [ "$name" == "../alpr-db-ocso/" ] ; then
+        if [ "$name" == "../file-name/" ] ; then
             continue
         fi
         echo "${name/..\/}:" | sed 's|/||g' >> output_file.txt
